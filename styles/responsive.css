@@ -1,0 +1,50 @@
+/*conjuntos de regras para responsividade*/
+/*As regras vao de 0 ate 900 px */
+@media (max-width: 900px) {
+
+  #page-home{
+    background-position-x: 70vw;
+  }
+  #page-home .content {
+
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home main {
+
+    align-items: center;
+  }
+ 
+  #page-home header a {
+    position:absolute;
+    bottom: 48px;
+
+    /*Essas duas propriedades combinadas fazem o cara se alinhar ao centro*/
+    left: 50%;
+    transform: translateX(-50%);
+    /*Esse translateX -50% faz achar o ponto medio e faz o cara se alinhar bem ao meio*/
+   
+  }
+
+}
+
+
+/* passou de 1700px fazer as regras abaixo */
+
+@media(min-width: 1700px) {
+  #page-home{
+    background-position-x: 40vw;
+  }
+  
+}
+
+/*Se a altura da tela passar de 760 px a imagem da #page-home ficara fixa com pixel e nao subira mas deste limite*/
+@media(max-height: 760px){
+
+  #page-home {
+    background-position-y: 200px;
+
+
+  }
+}
