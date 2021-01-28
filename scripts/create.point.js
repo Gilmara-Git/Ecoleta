@@ -1,7 +1,7 @@
 // Vamos usar a API do IBGE utilizando a funcao fetch
 // fetch retorna uma promise
 // json retorna uma promise
-// demonstracao do Mayk que trouxe os estados da API do IBGE
+// demonstracao do Mayk que trouxe os estados da API do IBGE - goglge: servicos API IBGE
 // fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados").then(function(res){ return res.json() }).then(function(data){ console.log(data)})
 
 
@@ -34,13 +34,21 @@ function getCities(event){
     console.log('Populating hidden field "state with >', stateInput.value)
 
     const ufValue =  event.target.value
+    
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
    
+    // limpando o camp cidades antes de buscar as cidades, por ao selecionar outro estado ainda carregava cidades do estado anterior
+    citySelect.innerHTML = `<option value>Selecione a Cidade</option>`
+    citySelect.disable = true;
+
+
     fetch(url)
     .then(res => res.json())
     .then(function(cities){
         for(const city of cities){
-            citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+           console.log(ufValue)
+           console.log(city) 
+           citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
         }
         citySelect.disabled = false;
     })
