@@ -10,7 +10,7 @@
 
 
 ## About
-**Ecoleta** is an application that was developed during the NLW01( Next Level Week )at Rocketseat. 
+**Ecoleta** is an application developed during the NLW01( Next Level Week )at Rocketseat. 
 
 ## Motivation
 The application purpose was bring to "devs" to the next level and to encourage people to visit local foster homes, so they can make a difference by spreading their love around. 

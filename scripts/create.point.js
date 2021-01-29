@@ -37,7 +37,7 @@ function getCities(event){
     
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
    
-    // limpando o camp cidades antes de buscar as cidades, por ao selecionar outro estado ainda carregava cidades do estado anterior
+    // limpando o camp cidades antes de buscar as cidades, pois ao selecionar outro estado ainda carregava cidades do estado anterior
     citySelect.innerHTML = `<option value>Selecione a Cidade</option>`
     citySelect.disable = true;
 
@@ -46,9 +46,9 @@ function getCities(event){
     .then(res => res.json())
     .then(function(cities){
         for(const city of cities){
-           console.log(ufValue)
-           console.log(city) 
-           citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+        //    console.log(ufValue)
+        //    console.log(city) 
+           citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
         }
         citySelect.disabled = false;
     })
