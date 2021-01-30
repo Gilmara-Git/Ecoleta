@@ -29,9 +29,9 @@ function getCities(event){
     const stateInput = document.querySelector("[name=state") // assim tb funciona
     // com este campo escondido acima vamos atualiza-lo com o UF que foi selecionado da seguinte forma abaixo:
     const indexOfSelectedState = event.target.selectedIndex;  
-    console.log('index', event.target.selectedIndex)
+    //console.log('index', event.target.selectedIndex)
     stateInput.value = event.target.options[indexOfSelectedState].text
-    console.log('Populating hidden field "state with >', stateInput.value)
+    //console.log('Populating hidden field "state with >', stateInput.value)
 
     const ufValue =  event.target.value
     
@@ -57,6 +57,45 @@ function getCities(event){
 
 document
     .querySelector("select[name=uf]")
-    .addEventListener("change", getCities ) // passando funcao por referecia
+    .addEventListener("change", getCities ) // passando funcao por referencia
 
 
+    const itemsToCollect = document.querySelectorAll('.items-grid li')
+    
+    for(const item of itemsToCollect){
+
+        item.addEventListener("click", handleSelectedItem)
+    }
+
+    let selectedItems = []
+    // adicionando e tirando a classe selected do <li>
+    function handleSelectedItem(event){
+
+        const itemLi = event.target
+        const itemId = itemLi.dataset.id
+      
+        itemLi.classList.toggle("selected")
+
+        const collectionItems = document.querySelector("[name=items]")
+
+        const alreadySelected = selectedItems.findIndex(item =>{
+            const foundItem = item == itemId
+            return foundItem
+        })
+
+       
+        if(alreadySelected >= 0 ){
+
+            const filteredItems = selectedItems.filter(item =>{
+                const itemIsDifferent = item != itemId
+                return itemIsDifferent
+            })
+
+            selectedItems = filteredItems
+           
+        }else {
+
+            selectedItems.push(itemId)
+        }
+        collectionItems.value = selectedItems
+    }

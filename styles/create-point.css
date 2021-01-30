@@ -183,3 +183,10 @@ form button:hover {
     background-color: #e1faec;
     border: 2px solid #34cb79;
 }
+
+/*Isso e para que ao clicar no li na pegue a img ou span somente o dataset de li*/
+.items-grid li img, 
+.items-grid li span {
+
+    pointer-events: none;
+}
