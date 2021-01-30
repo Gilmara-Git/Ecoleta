@@ -33,10 +33,6 @@ The application purpose was bring to "devs" to the next level and to encourage p
 ## Layout: 
 Developed by [Thiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/) and you can check it out on:
 
-[Figma Layout for Desktop]()
-
-[Figma Layout for Mobile]()
-
 
 ## Notion files:
 
