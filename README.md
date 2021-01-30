@@ -28,7 +28,7 @@ The application purpose was bring to "devs" to the next level and to encourage p
 [Mayk Brito](https://github.com/maykbrito)
 
 ## Link to Rocketseat repo:
-['Ecoleta' application]()
+['Ecoleta' application](https://www.notion.so/Front-end-7c8a1a9a6df547058f1473f899a3b9c4)
 
 ## Layout: 
 Developed by [Thiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/) and you can check it out on:
