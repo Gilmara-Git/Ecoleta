@@ -20,10 +20,15 @@ The application purpose was bring to "devs" to the next level and to encourage p
 
 
 ## Technologies used
+- Front-end:
 - Html5 
 - Css3 
+- Back-end:
+- Node.js
+- [Git bash for windows](https://gitforwindows.org/)
+- SQLite
 
-
+ 
 ## Instructor: 
 [Mayk Brito](https://github.com/maykbrito)
 
