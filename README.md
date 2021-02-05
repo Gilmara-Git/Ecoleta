@@ -1,11 +1,11 @@
 
 <h1 align="center">Rocketseat</h1>
 
-<h1 align="center"><b>"Ecoleta"</b></h1>
+<h1 align="center"><b>"Ecoleta Schema on db.diagram"</b></h1>
 
 
 <h1 align="center">
-    <img src="">
+    <img src="https://ik.imagekit.io/cnbmdh4b9w/ecoleta_dbdiagram_yDaHFtYor.png">
 </h1>
 
 
@@ -20,13 +20,12 @@ The application purpose was bring to "devs" to the next level and to register re
 
 
 ## Technologies used
-- Front-end:
 - Html5 
 - Css3 
-- Back-end:
 - Node.js
 - [Git bash for windows](https://gitforwindows.org/)
-- SQLite
+- PostgreSql
+- [db diagram](https://dbdiagram.io/d)
 
  
 ## Instructor: 
