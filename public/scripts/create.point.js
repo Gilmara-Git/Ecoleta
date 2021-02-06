@@ -73,7 +73,7 @@ document
 
         const itemLi = event.target
         const itemId = itemLi.dataset.id
-      
+            
         itemLi.classList.toggle("selected")
 
         const collectionItems = document.querySelector("[name=items]")

@@ -13,11 +13,27 @@
 **Ecoleta** is an application developed during the NLW01( Next Level Week )at Rocketseat. 
 
 ## Motivation
-The application purpose was bring to "devs" to the next level and to register recycle centers within a city. 
+Practice web development in order to reinforce and acquire more knowledge.
 
-- Responsiveness was applied using media queries. 
+- Responsiveness was applied to the pages using media queries. 
+- A form to create "recycleable points" within the city. Verb POST was used.
+- A page indicating that a recycle point was created successfully, then, after 2s, setTimeout function redirects it to the create-point page.
+- If for any reason an error occurred while creating a recycle point, a simple message is displayed to user indicating an error. (To be improved.) 
+- A search page shows the results of "recycleable points" that were filtered by "city name" or "recycle point's name".
+- A pseudo element was applied on "search results page" to embelish the layout. 
 
+## Future improvements:
 
+- Create a link, then a page to edit a recycle point and include an option to delete.
+<h1 align="center">
+    <img src="https://ik.imagekit.io/cnbmdh4b9w/Edit_ecoleta_68LGRS8ui.png"/>
+</h1>
+
+-  Apply a function "confirm", so user will need to confirm the deletion, otherwise, event.preventDefault()
+
+- Add lottie files animaton to replace the success message, on the "point-created" page. 
+- Apply visual message on html, when something goes wrong.
+- Apply regular expression to validate whether the url typed for the image is a valid URL.
 
 ## Technologies used
 - Html5 
@@ -26,30 +42,17 @@ The application purpose was bring to "devs" to the next level and to register re
 - [Git bash for windows](https://gitforwindows.org/)
 - PostgreSql
 - [db diagram](https://dbdiagram.io/d)
-
+- IBGE API to fetch Brazil States and Cities
  
 ## Instructor: 
 [Mayk Brito](https://github.com/maykbrito)
 
-## Link to Rocketseat repo:
+## Layout on Figma: 
 ['Ecoleta' application](https://www.notion.so/Front-end-7c8a1a9a6df547058f1473f899a3b9c4)
-
-## Layout: 
-Developed by [Thiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/) and you can check it out on:
+Developed by [Thiago Luchtenberg](https://www.instagram.com/tiagoluchtenberg/) 
 
 
-## Notion files:
-
-[NLW1]()
-
-[Frontend]()
-
-[Backend]()
-
-[Database]()
 ## To clone: 
-
-
 
 - Clone this repository:
 $ git clone 
@@ -64,16 +67,9 @@ $ git clone
 - Open your browser in: http://localhost:5500/
 
 
-## To contribute:
-- Fork the project 
 
-- Create a new branch with your changes: $ git checkout -b my-feature
 
-- Save your changes and create a commit message explaining your changes: $ git commit -m "feature: My new feature"
 
-- Submit your changes: $ git push origin my-feature
-
-## Extra Mile:
 
 
 

@@ -1,4 +1,8 @@
-body::after {
+
+/*O body estava assim antes, mas para melhorar a visualizacao na hora de rolar a pagina mudamos a configuracao para codigo abaixo*/
+/*Basicamente mudamos a posicao, top e adicionamos height em REM - root element*/
+/* So que agora o pseudo element nao esta mais na parte de baixo e sim na parte de cima, portanto mudamos as cores do body e do after*/
+/* body::after {
     content: "";
     background-color: white;
     position: fixed;
@@ -6,6 +10,22 @@ body::after {
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: -1;
+} */
+/*Quando entrar nesta pagina o body sera white */
+body{
+    background-color: white;
+}
+
+body::after {
+    content: "";
+    background-color: #f0f0f5;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 16rem;
     z-index: -1;
 }
 

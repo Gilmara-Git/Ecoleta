@@ -8,6 +8,7 @@
 
 {% block styles %}
   <link rel="stylesheet" href="/styles/create-point.css"/>
+  <link rel="stylesheet" href="/styles/modal.css"/>
 {% endblock styles %}
 
 {% block directoHome %}
@@ -18,7 +19,7 @@
 
   {% include "partials/page-header.html" %}
 
-  <form action="" method="">
+  <form action="/create-point" method="POST">
     <h1>Cadastro do ponto de coleta</h1>
 
     <fieldset>
@@ -47,6 +48,12 @@
   </form>
 
 {% endblock content %}
+
+{% block modal %}
+  {% if saved %}
+  {% include "partials/point-created.html" %}
+  {% endif %}
+{% endblock modal %}
 
 {% block scripts %}
   <script src="/scripts/create.point.js"></script>

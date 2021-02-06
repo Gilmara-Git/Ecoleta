@@ -1,17 +1,14 @@
 const express = require("express");
 const routes = express.Router()
+const PlacesController = require("../app/controllers/PlacesController")
 
 
-routes.get("/", (req, res)=>{
-    return res.render("index.html")
-})
+routes.get("/", PlacesController.index)
 
-routes.get("/create-point", (req, res)=>{
-   return  res.render("create-point.html")
-})
+routes.get("/create-point", PlacesController.create) 
 
-routes.get("/search", (req, res)=>{
-    return res.render("search-results.html")
-})
+routes.post("/create-point", PlacesController.post)
+
+routes.get("/search", PlacesController.search)
 
 module.exports = routes
