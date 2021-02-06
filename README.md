@@ -1,22 +1,20 @@
 
-<h1 align="center">Rocketseat</h1>
-
-<h1 align="center"><b>"Ecoleta Schema on db.diagram"</b></h1>
-
+<h1 align="center">Ecoleta</h1>
 
 <h1 align="center">
-    <img src="https://ik.imagekit.io/cnbmdh4b9w/ecoleta_dbdiagram_yDaHFtYor.png">
+    <img src="https://ik.imagekit.io/cnbmdh4b9w/ezgif.com-gif-maker__11__N_3wVdqg3.gif"/>
 </h1>
 
 
 ## About
 **Ecoleta** is an application developed during the NLW01( Next Level Week )at Rocketseat. 
 
+
 ## Motivation
 Practice web development in order to reinforce and acquire more knowledge.
 
 - Responsiveness was applied to the pages using media queries. 
-- A form to create "recycleable points" within the city. Verb POST was used.
+- A form to create "recycleable points" within a city. Verb POST was used to send data on req.body.
 - A page indicating that a recycle point was created successfully, then, after 2s, setTimeout function redirects it to the create-point page.
 - If for any reason an error occurred while creating a recycle point, a simple message is displayed to user indicating an error. (To be improved.) 
 - A search page shows the results of "recycleable points" that were filtered by "city name" or "recycle point's name".
@@ -24,7 +22,7 @@ Practice web development in order to reinforce and acquire more knowledge.
 
 ## Future improvements:
 
-- Create a link, then a page to edit a recycle point and include an option to delete.
+- Create a link edit or delete a recycle point.
 <h1 align="center">
     <img src="https://ik.imagekit.io/cnbmdh4b9w/Edit_ecoleta_68LGRS8ui.png"/>
 </h1>
@@ -41,8 +39,15 @@ Practice web development in order to reinforce and acquire more knowledge.
 - Node.js
 - [Git bash for windows](https://gitforwindows.org/)
 - PostgreSql
-- [db diagram](https://dbdiagram.io/d)
 - IBGE API to fetch Brazil States and Cities
+- [db diagram](https://dbdiagram.io/d)
+
+<h1 align="center"><b>"Ecoleta Schema on db.diagram"</b></h1>
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/cnbmdh4b9w/ecoleta_dbdiagram_yDaHFtYor.png">
+</h1>
+
  
 ## Instructor: 
 [Mayk Brito](https://github.com/maykbrito)
