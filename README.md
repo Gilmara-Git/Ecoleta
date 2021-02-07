@@ -32,6 +32,7 @@ Practice web development in order to reinforce and acquire more knowledge.
 - Add lottie files animaton to replace the success message, on the "point-created" page. 
 - Apply visual message on html, when something goes wrong.
 - Apply regular expression to validate whether the url typed for the image is a valid URL.
+- Include a seed.js file, intall faker to populate data
 
 ## Technologies used
 - Html5 
